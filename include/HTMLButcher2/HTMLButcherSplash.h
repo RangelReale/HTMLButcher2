@@ -9,6 +9,7 @@ namespace HTMLButcher2
 
 class HTMLButcherSplash : public QSplashScreen
 {
+	Q_OBJECT
 public:
 	HTMLButcherSplash();
 protected:
@@ -16,4 +17,4 @@ protected:
 	void keyPressEvent(QKeyEvent *event) override;
 };
 
-}
+} // namespace HTMLButcher2

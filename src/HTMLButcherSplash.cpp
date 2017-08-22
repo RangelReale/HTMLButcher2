@@ -26,4 +26,4 @@ void HTMLButcherSplash::keyPressEvent(QKeyEvent *event)
 	close();
 }
 
-}
+} // namespace HTMLButcher2

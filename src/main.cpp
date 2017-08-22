@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
 	app.setApplicationName("HTMLButcher 2");
 	app.setOrganizationDomain("sibit.com.br");
 
-	HTMLButcher2::HTMLButcherSplash *splash = new HTMLButcher2::HTMLButcherSplash;
-	splash->show();
+	//HTMLButcher2::HTMLButcherSplash *splash = new HTMLButcher2::HTMLButcherSplash;
+	//splash->show();
 
 	HTMLButcher2::HTMLButcherMain window;
 	window.show();
