@@ -15,11 +15,17 @@ set( EXE_SRCS
     
 	HTMLButcherMain.cpp
 	HTMLButcherSplash.cpp
+
+	Project/ButcherProject.cpp
 )
 
 set( EXE_INCS
 	${BASE_INCLUDE_PATH}/HTMLButcher2/HTMLButcherMain.h
 	${BASE_INCLUDE_PATH}/HTMLButcher2/HTMLButcherSplash.h
+
+	${BASE_INCLUDE_PATH}/HTMLButcher2/Core/ButcherException.h
+
+	${BASE_INCLUDE_PATH}/HTMLButcher2/Project/ButcherProject.h
 )
 
 set( EXE_RCCS resources/htmlbutcher2.qrc )
