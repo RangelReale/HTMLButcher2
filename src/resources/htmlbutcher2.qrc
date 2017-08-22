@@ -4,5 +4,21 @@
      <file>hbico_48.png</file>
      <file>hbico_64.png</file>
      <file>hb_splash.png</file>
+     
+    <file>ico_cancel.png</file>
+    <file>ico_delete_garea.png</file>
+    <file>ico_delete_line.png</file>
+    <file>ico_delete_marea.png</file>
+    <file>ico_insert_garea.png</file>
+    <file>ico_insert_hline.png</file>
+    <file>ico_insert_marea.png</file>
+    <file>ico_insert_vline.png</file>
+    <file>ico_move_line.png</file>
+    <file>ico_new.png</file>
+    <file>ico_open.png</file>
+    <file>ico_save.png</file>
+    <file>ico_zoom_in.png</file>
+    <file>ico_zoom_normal.png</file>
+    <file>ico_zoom_out.png</file>     
  </qresource>
  </RCC>
