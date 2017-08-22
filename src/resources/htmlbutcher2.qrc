@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>avatar.png</file>
+     <file>hbico_48.png</file>
+     <file>hbico_64.png</file>
+     <file>hb_splash.png</file>
+ </qresource>
+ </RCC>

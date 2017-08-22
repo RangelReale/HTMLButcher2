@@ -16,13 +16,13 @@ set( EXE_INCS
 	${BASE_INCLUDE_PATH}/HTMLButcher2/HTMLButcherMain.h
 )
 
-#set( EXE_RCCS ${BASE_SOURCE_PATH}/resources/ebclient.qrc )
+set( EXE_RCCS resources/htmlbutcher2.qrc )
 
-#if (WIN32)
-#	set( EXE_SRCS ${EXE_SRCS} ${BASE_SOURCE_PATH}/resources/ebclient.rc )
-#endif()
+if (WIN32)
+	set( EXE_SRCS ${EXE_SRCS} resources/htmlbutcher2.rc )
+endif()
 
-#qt5_add_resources(EXE_RCC_SRCS ${EXE_RCCS})
+qt5_add_resources(EXE_RCC_SRCS ${EXE_RCCS})
 
 #----------
 # BINARY
