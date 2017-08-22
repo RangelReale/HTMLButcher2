@@ -1,15 +1,19 @@
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH} )
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.1)
 project(HTMLButcher2)
 
+# output binaries on a single path
 SET (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 SET (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
-
+# base include directory
 SET (BASE_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/include)
+include_directories(${BASE_INCLUDE_PATH})
+
+# enable c++14
+set (CMAKE_CXX_STANDARD 14)
 
 #-----------------------------------------------------------------------------
 # Let's use the highest warning level.
@@ -50,17 +54,6 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Linux" AND CMAKE_SIZEOF_VOID_P EQUAL 8)
   SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 ENDIF()
-if (NACL)
-  SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
-ENDIF()
-
-if(CMAKE_COMPILER_IS_GNUCXX)
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-endif()
-if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-endif()
 
 #---------------------
 # Project start

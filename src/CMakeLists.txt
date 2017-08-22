@@ -10,10 +10,12 @@ set( EXE_SRCS
     main.cpp
     
 	HTMLButcherMain.cpp
+	HTMLButcherSplash.cpp
 )
 
 set( EXE_INCS
 	${BASE_INCLUDE_PATH}/HTMLButcher2/HTMLButcherMain.h
+	${BASE_INCLUDE_PATH}/HTMLButcher2/HTMLButcherSplash.h
 )
 
 set( EXE_RCCS resources/htmlbutcher2.qrc )
